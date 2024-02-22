@@ -18,6 +18,8 @@ To use the floating toolbar, include the provided CSS and JavaScript code in you
 
 ### Usage
 
+Implement the floating toolbar functionality by including this JavaScript snippet in your project. Make sure to include it after jQuery and Quill scripts.
+
 ```javascript
 var quill = new Quill('#editor-container', {
   // Quill editor options...
@@ -76,7 +78,3 @@ Style the toolbar and buttons using the following CSS. You can customize the app
   color: white;
 }
 ```
-
-### JavaScript
-
-Implement the floating toolbar functionality by including this JavaScript snippet in your project. Make sure to include it after jQuery and Quill scripts.
