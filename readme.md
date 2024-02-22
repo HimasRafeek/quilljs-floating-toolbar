@@ -2,7 +2,7 @@
 
 This JavaScript plugin adds a floating toolbar to the Quill editor. When text is selected within the Quill editor, a custom floating toolbar appears above the selection, allowing the user to apply formatting options directly. The toolbar is hidden when the selection is cleared or when the selected text does not require formatting changes.
 
-![Preview](https://ibb.co/d6x7LCB)
+![Preview](https://i.ibb.co/5vw2npT/Screenshot-2024-02-23-003610.png)
 
 ## Features
 
