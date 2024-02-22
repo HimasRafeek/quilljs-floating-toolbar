@@ -87,4 +87,5 @@ Style the toolbar and buttons using the following CSS. You can customize the app
 You can customize the toolbar by adding or removing buttons, changing styles, or extending the JavaScript functionality to include more features.
 
 ## License
-Specify your project's license here, typically MIT or another open source license.
+Code copyright 2024 Himas Rafeek. Code released under the MIT license.
+
