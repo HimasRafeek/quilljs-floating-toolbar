@@ -1,4 +1,4 @@
-# # Floating Toolbar for Quill Editor
+# Floating Toolbar for Quilljs Editor
 
 This JavaScript plugin adds a floating toolbar to the Quill editor. When text is selected within the Quill editor, a custom floating toolbar appears above the selection, allowing the user to apply formatting options directly. The toolbar is hidden when the selection is cleared or when the selected text does not require formatting changes.
 

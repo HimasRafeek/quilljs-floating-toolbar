@@ -5,13 +5,12 @@
  *  Description   : A floating toolbar for Quill.js
  *  Version       : 1.0.0
  *  Copyright     : 2024
- *  Github        : https://github.com/HimasRafeek/butterCake
- *  URI           : https://getButterCake.com
- *  Licence       : MIT - https://github.com/HimasRafeek/butterCake/blob/master/LICENSE
+ *  Github        : https://github.com/HimasRafeek/quilljs-floating-toolbar
+ *  URI           : https://himasrafeek.com
+ *  Licence       : MIT - https://github.com/HimasRafeek/quilljs-floating-toolbar/blob/master/LICENSE
  * ----------------------------------------------------------------------------------------
  * ========================================================================================
  */
-
 
 
 (function ($) {
@@ -27,21 +26,15 @@
       var selectionMiddle = (bounds.left + bounds.right) / 2;
       var tooltipWidth = $toolbar.outerWidth();
       var tooltipHeight = $toolbar.outerHeight();
-
       let offset = 110;
       if (bounds.top < 60) {
         offset = 20;
       }
-
-      // Calculate and set top position
-      var topPosition = editorBounds.top + bounds.top - tooltipHeight - offset; // Extra 5px for margin above the tooltip
-      topPosition = Math.max(5, topPosition); // Make sure the tooltip is not off the top of the editor
-
-      // Calculate and set left position to center the tooltip over the selection
+      var topPosition = editorBounds.top + bounds.top - tooltipHeight - offset;
+      topPosition = Math.max(5, topPosition);
       var leftPosition = selectionMiddle - tooltipWidth / 2;
-      leftPosition = Math.max(60, leftPosition); // Make sure the tooltip is not off the left of the editor
-      leftPosition = Math.min(document.body.clientWidth - tooltipWidth - 5, leftPosition); // Right boundary
-
+      leftPosition = Math.max(60, leftPosition);
+      leftPosition = Math.min(document.body.clientWidth - tooltipWidth - 5, leftPosition);
       $toolbar.css({
         top: topPosition + window.scrollY + 'px',
         left: leftPosition + window.scrollX + 'px',
@@ -76,7 +69,6 @@
         hideToolbar();
       }
     });
-
     return $toolbar;
   };
 })(jQuery);
