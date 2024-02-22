@@ -33,6 +33,8 @@ $toolbar.on('click', 'button', function () {
 
 ### HTML
 
+You can use any icon, in the Example I have used "remixicon"
+
 ```html
 <div id="quill-toolbar" style="display:none;">
   <button id="btn-magic-wand" data-action="rewrite"><i class="ri-bard-line"></i></button>
