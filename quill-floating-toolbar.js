@@ -22,7 +22,7 @@
       if (!range) return;
       toolbarVisible = true;
       var bounds = quill.getBounds(range.index, range.length);
-      var editorBounds = quill.scrollingContainer.getBoundingClientRect();
+      var editorBounds = quill.container.getBoundingClientRect();
       var selectionMiddle = (bounds.left + bounds.right) / 2;
       var tooltipWidth = $toolbar.outerWidth();
       var tooltipHeight = $toolbar.outerHeight();
